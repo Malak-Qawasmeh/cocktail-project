@@ -44,7 +44,7 @@ public class Blender {
     }
 
     public void add(Ingredient ingredient) throws BlenderOverflowException {
-        if (this.volume + this.getVolume(ingredient) <= this.capacity) {
+        if (this.volume + this.getVolume(ingredient) < this.capacity) {
             this.ingredients.add(ingredient);
             this.volume += getTotalVolume();
             this.calories += ingredient.getCalories();
