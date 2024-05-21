@@ -21,6 +21,7 @@ package cocktaill;
         this.volume = volume;
     }
 
+    @Override
     public Color getColor() {
         return color;
     }

@@ -2,10 +2,10 @@
 package cocktaill;
 
 
-public class Ingredient {
+public abstract class Ingredient {
     private String name;  
     private int calories; 
- 
+    
 public Ingredient(String name, int calories) {
     this.name = name;  
     this.calories = calories;
@@ -28,6 +28,7 @@ public Ingredient(String name, int calories) {
         this.calories = calories;
     }
 
+    public abstract Color getColor();
     
     public String getInfo() {
         return "Name: " + name + ", Calories: " + calories;

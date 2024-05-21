@@ -2,16 +2,10 @@
 
 package cocktaill;
 
-
-public class BlenderEmptyException {
+public class BlenderEmptyException extends Exception{
   
-    
-    
-    
-    
-    
-    
+  
     public String Message(){
-        return "";
+        return "Blender Is Empty";
     }
 }

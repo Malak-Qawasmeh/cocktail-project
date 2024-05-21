@@ -10,6 +10,7 @@ public class Sugar extends Ingredient {
      this.color = color;
  }
 
+    @Override
     public Color getColor() {
         return color;
     }

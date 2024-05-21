@@ -1,37 +1,25 @@
-
-
-
 package cocktaill;
 
+import java.io.FileWriter;
+import java.io.IOException;
 
-public class MyLogger implements Logger {
-    
-    private String attribute1;
-    private String attribute2;
+public class MyLogger implements MyLog {
 
-    public MyLogger(String attribute1, String attribute2) {
-        this.attribute1 = attribute1;
-        this.attribute2 = attribute2;
+    private String failStream;
+
+    public MyLogger(String failStream) {
+        this.failStream = failStream;
     }
-
-    public String getAttribute1() {
-        return attribute1;
-    }
-
-    public void setAttribute1(String attribute1) {
-        this.attribute1 = attribute1;
-    }
-
-    public String getAttribute2() {
-        return attribute2;
-    }
-
-    public void setAttribute2(String attribute2) {
-        this.attribute2 = attribute2;
-    }
-    
 
     @Override
-    public void log(String message){
-        System.out.println("MyLogger: " + message);
-    }}
+    public void log(String msg) {
+        try {
+            FileWriter MyFail = new FileWriter(this.failStream, true);
+
+            MyFail.write(msg + "\n");
+            MyFail.close();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+}
