@@ -44,13 +44,6 @@ public Cocktaill(Color color ,int calories,int volume){
         this.calories = calories;
     }
 
-    public ArrayList<Ingredient> getIngredients() {
-        return ingredients;
-    }
-
-    public void setIngredients(ArrayList<Ingredient> ingredients) {
-        this.ingredients = ingredients;
-    }
     
  public String getInfo() {
         return "Cocktail info: " + "\n"
