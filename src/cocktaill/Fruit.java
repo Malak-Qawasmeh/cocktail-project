@@ -2,6 +2,8 @@
 
 package cocktaill;
 
+import java.awt.Color;
+
 public class Fruit extends Ingredient {
         private int volume;
         private Color color;
@@ -12,6 +14,7 @@ public class Fruit extends Ingredient {
         this.color = color;
     }
 
+        @Override
     public int getVolume() {
         return volume;
     }

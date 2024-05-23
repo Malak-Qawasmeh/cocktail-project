@@ -1,6 +1,8 @@
 
 package cocktaill;
 
+import java.awt.Color;
+
 
 public abstract class Ingredient {
     private String name;  
@@ -29,6 +31,7 @@ public Ingredient(String name, int calories) {
     }
 
     public abstract Color getColor();
+    public abstract int getVolume();
     
     public String getInfo() {
         return "Name: " + name + ", Calories: " + calories;

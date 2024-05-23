@@ -3,17 +3,19 @@ package cocktaill;
 
 import java.awt.Color;
 
-public class Sugar extends Ingredient {
-    private Color color;
-    private int volume;    
+
+public class Ice extends Ingredient {
+    
+       private Color color;
+        private int volume; 
         
- public Sugar (String name , int calories,  int volume , Color color){
+ public Ice (String name , int calories, int volume, Color color ){
      super(name, calories);
      this.color = color;
      this.volume = volume;
  }
 
-    @Override
+       @Override
     public int getVolume() {
         return volume;
     }
@@ -22,7 +24,7 @@ public class Sugar extends Ingredient {
         this.volume = volume;
     }
 
-    @Override
+       @Override
     public Color getColor() {
         return color;
     }
@@ -33,6 +35,6 @@ public class Sugar extends Ingredient {
  
  @Override
     public String getInfo() {
-        return super.getInfo() + "Color: " + color +"\n " + "volume: " + volume ;
+        return super.getInfo() + ", Color: " + color+"\n " + "volume: " + volume;
     }
 }

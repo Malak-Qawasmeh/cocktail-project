@@ -2,18 +2,31 @@
 package cocktaill;
 
 import cocktaill.Ingredient;
+import java.awt.Color;
 import java.util.ArrayList;
 
     public class Cocktaill {
     private Color color;
     private int calories ;
-    private ArrayList<Ingredient> ingredients;
+    private int volume;
 
-public Cocktaill(Color color ,int calories, ArrayList<Ingredient> ingredients){
+
+    public Cocktaill() {
+    }
+
+public Cocktaill(Color color ,int calories,int volume){
    this.color = color;
    this.calories = calories;
-   this.ingredients = ingredients;
+   this.volume = volume;
 }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
 
     public Color getColor() {
         return color;
@@ -39,8 +52,11 @@ public Cocktaill(Color color ,int calories, ArrayList<Ingredient> ingredients){
         this.ingredients = ingredients;
     }
     
-    public String getInfo() {
-        return "Cocktail[calories=" + calories + ", ingredients=" + ingredients + ", color=" + color + "]";
+ public String getInfo() {
+        return "Cocktail info: " + "\n"
+                + "Calories: " + this.calories + ".cal" + "\n"
+                + "Volume: " + this.volume + "ml\n";
+               
     }
 }
 

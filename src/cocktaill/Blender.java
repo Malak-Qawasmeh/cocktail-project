@@ -1,11 +1,11 @@
 package cocktaill;
 
-import cocktaill.Color;
 import cocktaill.Ingredient;
 import cocktaill.MyLogger;
 import java.util.ArrayList;
 import cocktaill.BlenderOverflowException;
 import cocktaill.BlenderEmptyException;
+import java.awt.Color;
 
 public class Blender {
 
@@ -15,6 +15,7 @@ public class Blender {
     private Color color;
     private int volume;
     private MyLogger logger;
+    private Color blendedColor;
 
     public Blender(int capacity, MyLogger logger) {
         this.capacity = capacity;
@@ -31,75 +32,56 @@ public class Blender {
         this.logger = logger;
     }
 
-    private int getTotalVolume() {
-        int totalVolume = 0;
+public int getTotalVolume() {
+        int totalValue = 0;
         for (Ingredient ingredient : ingredients) {
-            if (ingredient instanceof Fruit) {
-                totalVolume += ((Fruit) ingredient).getVolume();
-            } else if (ingredient instanceof Milk) {
-                totalVolume += ((Milk) ingredient).getVolume();
-            }
+            totalValue += ingredient.getVolume();
         }
-        return totalVolume;
+        return totalValue;
     }
-
     public void add(Ingredient ingredient) throws BlenderOverflowException {
-        if (this.volume + this.getVolume(ingredient) < this.capacity) {
-            this.ingredients.add(ingredient);
-            this.volume += getTotalVolume();
+        if (this.volume + getTotalVolume() < this.capacity) {
+            this.ingredients.add(ingredient);           
             this.calories += ingredient.getCalories();
-            this.color = blendColors(this.color, ingredient.getColor());
- 
         } else {
             throw new BlenderOverflowException();
         }
-               logger.log("Added ingredient: " + ingredient.getInfo());
+        logger.log("Added ingredient: " + ingredient.getInfo());
     }
-    
-     public void pour(Cup cup) throws BlenderEmptyException {
-        if (this.ingredients.isEmpty()) {
-            throw new BlenderEmptyException();        
-        }
-        cup.setCalories(this.calories);
-        this.ingredients.clear();
-        this.volume = 0;
-        this.calories = 0;
-        this.color = new Color(0, 0, 0); // Reset to default color
-    
-       }
-     
-    public Cocktaill blend() throws BlenderEmptyException {
+
+    public void pour(Cup cup) throws BlenderEmptyException {
         if (this.ingredients.isEmpty()) {
             throw new BlenderEmptyException();
         }
-        Cocktaill cocktail = new Cocktaill(color, calories, ingredients);
+        cup.setCalories(this.calories);
         this.ingredients.clear();
-        this.volume = 0;
-        this.calories = 0;
-        this.color = new Color(0, 0, 0); // Reset to default color
-        return cocktail;
+
     }
 
-   
+    public Cocktaill blend() {
+        int totalVolume = this.getTotalVolume();               
+                               
+        float r = 0, g = 0, b = 0;
+        int count = ingredients.size();
 
-    public int getVolume(Ingredient ingredient) {
-        if (ingredient instanceof Fruit) {
-            return ((Fruit) ingredient).getVolume();
-        } else if (ingredient instanceof Milk) {
-            return ((Milk) ingredient).getVolume();
+        for (Ingredient ingredient : ingredients) {
+            r += ingredient.getColor().getRed();
+            g += ingredient.getColor().getGreen();
+            b += ingredient.getColor().getBlue();
         }
 
-        return 0;
+        // Average the colors
+        r /= count;
+        g /= count;
+        b /= count;
+
+        Color blendedColor = new Color((int) r, (int) g, (int) b);                          
+        Cocktaill cocktail = new Cocktaill(blendedColor, calories,totalVolume);
+        return cocktail;
+
     }
 
     public String getInfo() {
         return "Blender[capacity=" + capacity + ", calories=" + calories + ", volume=" + volume + ", color=" + color + "]";
-    }
-
-    private Color blendColors(Color c1, Color c2) {
-        int r = (c1.getR() + c2.getR()) / 2;
-        int g = (c1.getG() + c2.getG()) / 2;
-        int b = (c1.getB() + c2.getB()) / 2;
-        return new Color(r, g, b);
     }
 }

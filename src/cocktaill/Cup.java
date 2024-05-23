@@ -7,6 +7,10 @@ public class Cup {
 private int capacity;
 private int calories;
 
+    public Cup() {
+    }
+
+
 public Cup (int capacity , int calories){
     this.capacity = capacity;
     this.calories = calories;
