@@ -90,3 +90,63 @@ Added ingredient: Name: ice, Calories: 30, Color: java.awt.Color[r=255,g=255,b=2
  volume: 20
 Added ingredient: Name: ice, Calories: 30, Color: java.awt.Color[r=255,g=255,b=255]
  volume: 20
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: sugar, Calories: 40Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 30
+Added ingredient: Name: ice, Calories: 30, Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 20
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: apple, Calories: 52, Volume: 150, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: banana, Calories: 89, Volume: 120, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: Strawberry, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=0,b=0]
+Added ingredient: Name: sugar, Calories: 40Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 30
+Added ingredient: Name: ice, Calories: 30, Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 20
+Added ingredient: Name: apple, Calories: 52, Volume: 150, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: banana, Calories: 89, Volume: 120, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: Strawberry, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=0,b=0]
+Added ingredient: Name: ice, Calories: 30, Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 20
+Added ingredient: Name: sugar, Calories: 40Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 30
+Added ingredient: Name: ice, Calories: 30, Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 20
+Added ingredient: Name: Kiwi, Calories: 61, Volume: 110, Color: java.awt.Color[r=0,g=255,b=0]
+Added ingredient: Name: banana, Calories: 89, Volume: 120, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: Strawberry, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=0,b=0]
+Added ingredient: Name: Kiwi, Calories: 61, Volume: 110, Color: java.awt.Color[r=0,g=255,b=0]
+Added ingredient: Name: milk, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=255,b=255]
+Added ingredient: Name: banana, Calories: 89, Volume: 120, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: apple, Calories: 52, Volume: 150, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: apple, Calories: 52, Volume: 150, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: apple, Calories: 52, Volume: 150, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: banana, Calories: 89, Volume: 120, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: Strawberry, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=0,b=0]
+Added ingredient: Name: Kiwi, Calories: 61, Volume: 110, Color: java.awt.Color[r=0,g=255,b=0]
+Added ingredient: Name: milk, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=255,b=255]
+Added ingredient: Name: ice, Calories: 30, Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 20
+Added ingredient: Name: sugar, Calories: 40Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 30
+Added ingredient: Name: banana, Calories: 89, Volume: 120, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: Strawberry, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=0,b=0]
+Added ingredient: Name: Kiwi, Calories: 61, Volume: 110, Color: java.awt.Color[r=0,g=255,b=0]
+Added ingredient: Name: milk, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=255,b=255]
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: apple, Calories: 52, Volume: 150, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: banana, Calories: 89, Volume: 120, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: apple, Calories: 52, Volume: 150, Color: java.awt.Color[r=255,g=255,b=0]
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: Strawberry, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=0,b=0]
+Added ingredient: Name: Kiwi, Calories: 61, Volume: 110, Color: java.awt.Color[r=0,g=255,b=0]
+Added ingredient: Name: mango, Calories: 60, Volume: 170, Color: java.awt.Color[r=255,g=200,b=0]
+Added ingredient: Name: milk, Calories: 32, Volume: 100, Color: java.awt.Color[r=255,g=255,b=255]
+Added ingredient: Name: sugar, Calories: 40Color: java.awt.Color[r=255,g=255,b=255]
+ volume: 30

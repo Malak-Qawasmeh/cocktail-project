@@ -17,7 +17,7 @@ public class NewJFrame extends javax.swing.JFrame {
     ArrayList<Ingredient> ingredient = new ArrayList<>();
     Color color ; 
     MyLogger logger = new MyLogger("MyLogger.log");
-    Blender blender = new Blender(1000,logger);
+    Blender blender = new Blender(400,logger);
     Cup cup = new  Cup();
     Cocktaill cocktaill = new Cocktaill();
     
@@ -408,13 +408,13 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(121, 121, 121)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
-                        .addGap(103, 103, 103)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(cocktaillPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(72, 72, 72)
@@ -558,7 +558,7 @@ if(ACheckBox.isSelected()){
     private void largeCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_largeCheckBoxActionPerformed
        if(largeCheckBox.isSelected()){
         try {
-            cup.setCapacity(500);
+            cup.setCapacity(300);
             blender.pour(cup);
         } catch (BlenderEmptyException ex) {
                   JOptionPane.showMessageDialog(this,ex);
